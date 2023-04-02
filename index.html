@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp clone using html & css</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="container">
+        <!-- ---------- Main Header ---------- -->
         <header>
             <a href="#" class="logo">WhatsApp</a>
             <div class="header-icon">
@@ -21,6 +21,7 @@
             </div>
         </header>
 
+        <!-- ---------- Toggle Tab Section ---------- -->
         <div class="tabs">
             <input type="radio" name="group" id="chats" checked>
             <input type="radio" name="group" id="status">
@@ -31,14 +32,15 @@
                 <label for="calls">Calls</label>
                 <div class="underline"></div>
             </div>
-                <div class="content">
-                    <!-- ------------ Chats ------------ -->
-                    <div class="box chats">
+            <div class="content">
+                <!-- ------------ Chats ------------ -->
+                <div class="box chats">
+                    <div class="data">
                         <div class="corner-menu">
                             <ion-icon name="chatbubble"></ion-icon>
                         </div>
                         <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img1.jpg">
                                 </div>
@@ -53,9 +55,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img2.jpg">
                                 </div>
@@ -71,9 +71,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img3.jpg">
                                 </div>
@@ -87,9 +85,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img4.jpg">
                                 </div>
@@ -103,9 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img5.jpg">
                                 </div>
@@ -119,9 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img6.jpg">
                                 </div>
@@ -136,9 +128,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img7.jpg">
                                 </div>
@@ -152,9 +142,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img8.jpg">
                                 </div>
@@ -169,9 +157,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img9.jpg">
                                 </div>
@@ -185,11 +171,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="bottom-message">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <p>Your personal messages are <span>end-to-end encrypted</span></p>
+                            </div>
+
                         </div>
                     </div>
+                </div>
 
-                    <!-- ------------ Status ------------ -->
-                    <div class="box status">
+                <!-- ------------ Status ------------ -->
+                <div class="box status">
+                    <div class="data">
                         <div class="pencial-icon">
                             <ion-icon name="pencil"></ion-icon>
                         </div>
@@ -197,12 +190,12 @@
                             <ion-icon name="camera"></ion-icon>
                         </div>
                         <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img1.jpg">
-                                    <div class="plus-icon">
-                                        <ion-icon name="add-outline"></ion-icon>
-                                    </div>
+                                </div>
+                                <div class="plus-icon">
+                                    <ion-icon name="add-outline"></ion-icon>
                                 </div>
                                 <div class="details">
                                     <div class="list-head">
@@ -213,10 +206,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <label for="">Recent Updates</label>
-                        <div class="chatlist">
-                            <div class="data">
+                            <label for="">Recent Updates</label>
+                            <div class="block">
                                 <div class="imgbx unseen">
                                     <img src="images/img2.jpg">
                                 </div>
@@ -229,9 +220,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx unseen">
                                     <img src="images/img8.jpg">
                                 </div>
@@ -244,9 +233,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx unseen">
                                     <img src="images/img6.jpg">
                                 </div>
@@ -259,10 +246,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <label for="">Viewed Updates</label>
-                        <div class="chatlist">
-                            <div class="data">
+                            <label for="">Viewed Updates</label>
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img7.jpg">
                                 </div>
@@ -275,9 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img4.jpg">
                                 </div>
@@ -290,9 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img8.jpg">
                                 </div>
@@ -305,9 +286,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img4.jpg">
                                 </div>
@@ -320,9 +299,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img4.jpg">
                                 </div>
@@ -335,16 +312,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="bottom-message">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <p>Your personal messages are <span>end-to-end encrypted</span></p>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- ------------ Calls ------------ -->
-                    <div class="box calls">
+                </div>
+                <!-- ------------ Calls ------------ -->
+                <div class="box calls">
+                    <div class="data">
                         <div class="corner-menu">
                             <ion-icon name="call"></ion-icon>
                         </div>
                         <div class="chatlist">
-                            <div class="data">
-                                <div class="imgbx green">
+                            <div class="block">
+                                <div class="imgbx img-link-icon">
                                     <ion-icon name="link-sharp"></ion-icon>
                                 </div>
                                 <div class="details">
@@ -356,10 +340,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <label for="">Recent</label>
-                        <div class="chatlist">
-                            <div class="data">
+                            <label for="">Recent</label>
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img2.jpg">
                                 </div>
@@ -368,14 +350,15 @@
                                         <h4>Raghav Dost</h4>
                                     </div>
                                     <div class="message_p">
-                                        <p><span class=" out-call-red "><ion-icon name="arrow-down"></ion-icon></span>Today, 9:47 am</p>
+                                        <p><span class=" out-call-red "><ion-icon
+                                                    name="arrow-down"></ion-icon></span>Today,
+                                            9:47 am</p>
                                     </div>
                                 </div>
                                 <div class="calls-icon"><ion-icon name="videocam"></ion-icon></div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img4.jpg">
                                 </div>
@@ -384,14 +367,14 @@
                                         <h4>Rupa Jio</h4>
                                     </div>
                                     <div class="message_p">
-                                        <p><span class="in-call-red "><ion-icon name="arrow-down"></ion-icon></span>Yestarday, 6:47 pm</p>
+                                        <p><span class="in-call-red "><ion-icon
+                                                    name="arrow-down"></ion-icon></span>Yestarday,
+                                            6:47 pm</p>
                                     </div>
                                 </div>
                                 <div class="calls-icon"><ion-icon name="videocam"></ion-icon></div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img2.jpg">
                                 </div>
@@ -400,14 +383,14 @@
                                         <h4>Neeraj</h4>
                                     </div>
                                     <div class="message_p">
-                                        <p><span class=" out-call-green "><ion-icon name="arrow-down"></ion-icon></span>29 March, 7:47 am</p>
+                                        <p><span class=" out-call-green "><ion-icon
+                                                    name="arrow-down"></ion-icon></span>29
+                                            March, 7:47 am</p>
                                     </div>
                                 </div>
                                 <div class="calls-icon"><ion-icon name="call"></ion-icon></div>
                             </div>
-                        </div>
-                        <div class="chatlist">
-                            <div class="data">
+                            <div class="block">
                                 <div class="imgbx">
                                     <img src="images/img2.jpg">
                                 </div>
@@ -416,14 +399,21 @@
                                         <h4>Neeraj</h4>
                                     </div>
                                     <div class="message_p">
-                                        <p><span class="in-call-green "><ion-icon name="arrow-down"></ion-icon></span>29 March, 7:47 am</p>
+                                        <p><span class="in-call-green "><ion-icon name="arrow-down"></ion-icon></span>29
+                                            March, 7:47 am</p>
                                     </div>
                                 </div>
                                 <div class="calls-icon"><ion-icon name="call"></ion-icon></div>
                             </div>
+                            <div class="bottom-message">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <p>Your personal messages are <span>end-to-end encrypted</span></p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
 
 
