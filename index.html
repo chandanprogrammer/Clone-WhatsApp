@@ -33,7 +33,7 @@
                 <div class="underline"></div>
             </div>
             <div class="content">
-                <!-- ------------ Chats ------------ -->
+                <!-- ------------ Chats Section ------------ -->
                 <div class="box chats">
                     <div class="data">
                         <div class="corner-menu">
@@ -240,7 +240,7 @@
                     </div>
                 </div>
 
-                <!-- ------------ Status ------------ -->
+                <!-- ------------ Status Section ------------ -->
                 <div class="box status">
                     <div class="data">
                         <div class="pencial-icon">
@@ -380,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ------------ Calls ------------ -->
+                <!-- ------------ Calls Section ------------ -->
                 <div class="box calls">
                     <div class="data">
                         <div class="corner-menu">
@@ -475,10 +475,59 @@
                 </div>
             </div>
         </div>
+        <div class="chat-box">
+            <div class="chat-header">
+                <div class="img-content">
+                    <ion-icon name="arrow-back-sharp" class="back">
+                    </ion-icon>
+                    <div class="imgBx">
+                        <img src="images/img1.jpg">
+                    </div>
+                    <h3>Chandan Kumar <br> <span>Online</span></h3>
+                </div>
+                <div class="action-buttons">
+                    <ion-icon name="videocam">
+                    </ion-icon>
+                    <ion-icon name="call">
+                    </ion-icon>
+                    <ion-icon name="ellipsis-vertical">
+                    </ion-icon>
+                </div>
+            </div>
+            <div class="message-box">
+                <div class="message">How to make whatsapp clone using html and css? <br> <span class="time">10:19</span>
+                </div>
+                <div class="message-input">
+                    <div class="input">
+                        <ion-icon name="happy-outline">
+                        </ion-icon>
+                        <input type="text" placeholder="Message">
+                        <ion-icon name="attach-outline" class="deg45">
+                        </ion-icon>
+                        <ion-icon name="camera">
+                        </ion-icon>
+                    </div>
+                    <div class="mic"><ion-icon name="mic">
+                    </ion-icon></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        let back = document.querySelector('.back');
+        let chat_box = document.querySelector('.chat-box');
+        let chatlist = document.querySelector('.chatlist');
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        back.onclick = function(){
+            chat_box.classList.remove('hide');
+        }
+        chatlist.onclick = function(){
+            chat_box.classList.add('hide');
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
